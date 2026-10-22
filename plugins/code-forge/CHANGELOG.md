@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0, 2026-10-22
+- Skill names end in their place in the new-project order: `new-project-1`, `feature-define-2`, `init-repo-3`, `architecture-4`, `foundation-5`, `feature-plan-6`, `feature-implement-7`. Support skills end in `-x`: `status-check-x`, `status-sync-x`, `deps-audit-x`, `apply-structure-x`. Invoke them as `/code-forge:new-project-1` and so on.
+
 ## 0.3.0, 2026-10-22
 - Renamed from vibekit to code-forge and published in forge-marketplace. Skills are now invoked as `/code-forge:[name]`.
 - Functional templates fill `modified` from `{{DATE}}` instead of a fixed date.

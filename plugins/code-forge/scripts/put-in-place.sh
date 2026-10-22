@@ -82,7 +82,7 @@ if [ "$SCAFFOLD" -eq 1 ]; then
     if [ -e "$dst" ] && [ "$FORCE" -ne 1 ]; then skipped=$((skipped+1)); continue; fi
     fill "$src" "$dst"; written=$((written+1))
   done
-  echo "functional docs scaffolded in $FROOT (feature notes are written by /code-forge:feature-define)"
+  echo "functional docs scaffolded in $FROOT (feature notes are written by /code-forge:feature-define-2)"
 fi
 
 if [ "$VENDOR" -eq 1 ]; then

@@ -6,4 +6,4 @@ Default: a local git repository with no remote (`profiles/extensions/source-cont
 |---|---|---|
 | GitHub with GitHub Actions (`github.md`) | the code should live off your machine, you want CI (`ci.yml` running `scripts/test.sh`, `release.yml` on tags), Dependabot, or the Cloudflare pairing with per-branch previews | private repos have limited free Actions minutes; nothing is pushed without the user saying so |
 
-Dependency automation only exists with GitHub: Dependabot with a 7-day minimum age, grouped minor updates, weekly. Without it, `deps-audit` on a schedule does the same job by hand.
+Dependency automation only exists with GitHub: Dependabot with a 7-day minimum age, grouped minor updates, weekly. Without it, `deps-audit-x` on a schedule does the same job by hand.

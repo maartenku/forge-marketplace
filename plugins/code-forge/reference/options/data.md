@@ -1,6 +1,6 @@
 # Data and persistence
 
-There is no default for this block. The choice follows from the features, so `architecture` always asks. The four options are extensions under `profiles/extensions/database/`:
+There is no default for this block. The choice follows from the features, so `architecture-4` always asks. The four options are extensions under `profiles/extensions/database/`:
 
 | Option | What | Pick when | Sandbox | Watch out |
 |---|---|---|---|---|

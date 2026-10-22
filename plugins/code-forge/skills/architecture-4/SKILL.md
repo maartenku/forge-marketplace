@@ -1,9 +1,9 @@
 ---
-name: architecture
+name: architecture-4
 description: Phase 3 of the code-forge workflow. Walks the seven building blocks (application type, frontend, backend, data, authorization, hosting, source control/CI), composes stack.md from a base profile plus extensions, derives dependencies from the feature notes, lists reusable foundations, and writes docs/technical/architecture/* plus ADRs. Use when the user says "architecture", "choose the stack", "foundation plan", or the repo is at loop phase 3.
 ---
 
-# architecture
+# architecture-4
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 
@@ -27,7 +27,7 @@ You are running Phase 3 of the code-forge workflow. Decide the architecture for 
 5. Write one `docs/technical/architecture/decisions/ADR-000N-[slug].md` per deviation, from `ADR-0000-template.md`.
 6. Write `docs/technical/architecture/foundation-plan.md`: ordered steps, each marked copy-from or generate, the sandbox contents, the gate.
 7. Update the `docs/README.md` header to phase 3 with next gate "foundation plan approved", and set the functional hub to `Loop phase: 3 (awaiting approval)`.
-8. Stop. Show the user `overview.md` and `foundation-plan.md` and ask for approval. When they approve, write their name and the date into the plan's "Approved by" line and tell them the next step is `/code-forge:foundation`.
+8. Stop. Show the user `overview.md` and `foundation-plan.md` and ask for approval. When they approve, write their name and the date into the plan's "Approved by" line and tell them the next step is `/code-forge:foundation-5`.
 
 ## Rules
 

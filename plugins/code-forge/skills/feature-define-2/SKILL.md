@@ -1,13 +1,13 @@
 ---
-name: feature-define
-description: code-forge workflow. Writes or refines the functional note for one feature ([functional root]/features/[slug].md) from the user's high-level expectations, asking only what is unclear. Use when the user says "add a feature", "define feature X", "new feature idea", or wants a feature described before it is planned technically. Called by new-project for each initial feature; the entry point for every later feature.
+name: feature-define-2
+description: code-forge workflow. Writes or refines the functional note for one feature ([functional root]/features/[slug].md) from the user's high-level expectations, asking only what is unclear. Use when the user says "add a feature", "define feature X", "new feature idea", or wants a feature described before it is planned technically. Called by new-project-1 for each initial feature; the entry point for every later feature.
 ---
 
-# feature-define
+# feature-define-2
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 
-Write the functional note for one feature: what it does, for whom, and how we know it is done. No technical plan here; that is `/code-forge:feature-plan`, later, once the stack exists.
+Write the functional note for one feature: what it does, for whom, and how we know it is done. No technical plan here; that is `/code-forge:feature-plan-6`, later, once the stack exists.
 
 ## Before you start
 
@@ -23,7 +23,7 @@ Write the functional note for one feature: what it does, for whom, and how we kn
 5. Add the row to `features/README.md`. If the feature changes the user journey, say so and propose the edit; do not change the journey silently.
 6. If the repo exists, add the feature's row to `docs/README.md` (functional note, `backlog/[slug]/ (not planned yet)`, no design yet).
 7. If the functional root is in the repo, commit `docs(functional): define [slug]`; ask before pushing.
-8. Report: the note path, the slug, open questions, and the next step. That is `/code-forge:feature-plan [slug]` when the project is at phase 5 or later; otherwise nothing until the foundation exists.
+8. Report: the note path, the slug, open questions, and the next step. That is `/code-forge:feature-plan-6 [slug]` when the project is at phase 5 or later; otherwise nothing until the foundation exists.
 
 ## Rules
 

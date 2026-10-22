@@ -1,9 +1,9 @@
 ---
-name: init-repo
+name: init-repo-3
 description: Phase 2 of the code-forge workflow. Lays down the repo skeleton (CLAUDE.md, docs/technical, environments/sandbox, scripts, CI) from the kit template in the current repository, points it at the functional docs (docs/functional or an external folder), optionally vendors the skills, and commits. Use when the user says "init the repo", "set up the repository", or has just created an empty repo for a project.
 ---
 
-# init-repo
+# init-repo-3
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 
@@ -11,7 +11,7 @@ You are running Phase 2 of the code-forge workflow. Turn the current repository 
 
 ## Before you start: the Phase 1 gate
 
-1. Find the functional docs: `docs/functional` in this repo, or an absolute path the user gives (readable through `--add-dir`). They must contain a hub, a whitepaper, a roadmap and at least one note in `features/`. If they do not, stop and tell the user to run `/code-forge:new-project` first.
+1. Find the functional docs: `docs/functional` in this repo, or an absolute path the user gives (readable through `--add-dir`). They must contain a hub, a whitepaper, a roadmap and at least one note in `features/`. If they do not, stop and tell the user to run `/code-forge:new-project-1` first.
 2. Ask once where the code lives: local git with no remote (the default) or GitHub.
 
 ## Steps
@@ -29,9 +29,9 @@ You are running Phase 2 of the code-forge workflow. Turn the current repository 
 4. With local git, delete `.github/` (there is no CI; `scripts/test.sh` runs by hand). With GitHub, keep `.github/workflows/ci.yml`.
 5. Ask whether to vendor the skills. If yes, copy `${CLAUDE_PLUGIN_ROOT}/skills/*` into `.claude/skills/`. If no, leave `.claude/skills/.keep`.
 6. Make `scripts/*.sh` executable. Do not run `ng new`, `dotnet new` or any package install.
-7. Run `git init` if the folder is not a repository yet. Commit as `chore: code-forge init-repo (phase 2)`. If a remote exists, ask whether to push, and push only on a yes.
+7. Run `git init` if the folder is not a repository yet. Commit as `chore: code-forge init-repo-3 (phase 2)`. If a remote exists, ask whether to push, and push only on a yes.
 8. In the hub (`README.md` in the functional root), set `Repo: [url or path]` and `Loop phase: 3`, and bump `modified`.
-9. Tell the user the next step is `/code-forge:architecture`. If the functional root is external, also give the session command: `claude --add-dir "[FUNCTIONAL_PATH]"`.
+9. Tell the user the next step is `/code-forge:architecture-4`. If the functional root is external, also give the session command: `claude --add-dir "[FUNCTIONAL_PATH]"`.
 
 ## Rules
 

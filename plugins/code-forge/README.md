@@ -2,23 +2,25 @@
 
 A workflow kit for AI-assisted side projects, packaged as a Claude Code plugin. It carries the skills Claude Code runs per phase, a repo skeleton, templates for the functional and technical docs, and the reference material the skills point at. It does not depend on any particular note-taking tool: the functional docs live in `docs/functional/` inside the repo by default, or in any folder you name (an Obsidian vault project folder works, and the frontmatter is Obsidian-compatible).
 
-Version 0.3.0. See `CHANGELOG.md`.
+Version 0.4.0. See `CHANGELOG.md`.
+
+Skill names end in their place in the new-project order (`new-project-1` to `feature-implement-7`). Names ending in `-x` are support skills you run when needed. The order is in `reference/workflow.md`.
 
 ## The idea
 
 Every project has two document sets. Functional docs say what the product is and why: hub, whitepaper, roadmap, one note per feature, design decisions, user journey. Technical docs say how it is built: architecture, designs, feature plans, setup. The skills read the first and write the second, and keep the two in step. A phase-gated loop runs over them:
 
-0 Idea, 1 Define (`new-project`, `feature-define`), 2 Repo (`init-repo`), 3 Architecture (`architecture`), 4 Foundation and sandbox (`foundation`, `deps-audit`), 5 Design, 6 Feature loop (`feature-plan`, `feature-implement`, `status-sync`), 7 Verify, then back to 6 or to `feature-define` for a new feature. `status-check` at every session start. Details in `reference/workflow.md`; rules in `reference/rules.md`; the functional docs contract in `reference/functional-docs.md`.
+0 Idea, 1 Define (`new-project-1`, `feature-define-2`), 2 Repo (`init-repo-3`), 3 Architecture (`architecture-4`), 4 Foundation and sandbox (`foundation-5`, `deps-audit-x`), 5 Design, 6 Feature loop (`feature-plan-6`, `feature-implement-7`, `status-sync-x`), 7 Verify, then back to 6 or to `feature-define-2` for a new feature. `status-check-x` at every session start. Details in `reference/workflow.md`; rules in `reference/rules.md`; the functional docs contract in `reference/functional-docs.md`.
 
 ## What is inside
 
 | Path | What |
 |---|---|
 | `.claude-plugin/plugin.json` | makes this folder a Claude Code plugin named `code-forge` |
-| `skills/[name]/SKILL.md` | eleven skills, invoked as `/code-forge:[name]`: `new-project`, `feature-define`, `init-repo`, `architecture`, `foundation`, `deps-audit`, `feature-plan`, `feature-implement`, `status-sync`, `status-check`, and `apply-structure` for existing projects |
-| `templates/repo/` | the repo skeleton `init-repo` copies: `CLAUDE.md`, `docs/technical/`, `environments/sandbox/`, `scripts/`, CI |
-| `templates/functional/` | the functional notes `new-project` and `feature-define` write |
-| `templates/adoption-plan.md` | the plan `apply-structure` writes for an existing project |
+| `skills/[name]/SKILL.md` | eleven skills, invoked as `/code-forge:[name]`: `new-project-1`, `feature-define-2`, `init-repo-3`, `architecture-4`, `foundation-5`, `deps-audit-x`, `feature-plan-6`, `feature-implement-7`, `status-sync-x`, `status-check-x`, and `apply-structure-x` for existing projects |
+| `templates/repo/` | the repo skeleton `init-repo-3` copies: `CLAUDE.md`, `docs/technical/`, `environments/sandbox/`, `scripts/`, CI |
+| `templates/functional/` | the functional notes `new-project-1` and `feature-define-2` write |
+| `templates/adoption-plan.md` | the plan `apply-structure-x` writes for an existing project |
 | `reference/` | the loop, the rules, the functional docs contract, the building-block checklist, per-block decision guides, and `profiles/` with base profiles, extensions and a compatibility matrix |
 | `foundations/README.md` | a table for code worth copying instead of generating; fill it with your own starters |
 | `scripts/` | `put-in-place.sh` (the path without AI), `sync-check.sh`, `validate.sh` |
@@ -42,15 +44,15 @@ claude plugin install code-forge@forge-marketplace
 
 ## New project
 
-1. `/code-forge:new-project [Name]` in the repo (or anywhere, if the functional docs go to an external folder). It interviews you briefly and writes the functional docs.
-2. `/code-forge:init-repo` in the repo. It copies `templates/repo/`, points `CLAUDE.md` at the functional docs, keeps the GitHub workflow only if the code goes to GitHub, vendors the skills into `.claude/skills/` if you want, and commits.
-3. `/code-forge:architecture`, then `/code-forge:foundation`, then the feature loop.
+1. `/code-forge:new-project-1 [Name]` in the repo (or anywhere, if the functional docs go to an external folder). It interviews you briefly and writes the functional docs.
+2. `/code-forge:init-repo-3` in the repo. It copies `templates/repo/`, points `CLAUDE.md` at the functional docs, keeps the GitHub workflow only if the code goes to GitHub, vendors the skills into `.claude/skills/` if you want, and commits.
+3. `/code-forge:architecture-4`, then `/code-forge:foundation-5`, then the feature loop.
 
 Without AI: `scripts/put-in-place.sh [target-dir] --project "Name" [--functional docs/functional | /abs/path] [--host local|github] [--vendor-skills] [--scaffold-functional]`.
 
 ## Existing project
 
-`/code-forge:apply-structure` in the repo. It inventories the repo, the docs and the code (with evidence per feature), interviews you on the intended stack, writes `docs/technical/architecture/adoption-plan.md`, executes the sections you approve with one commit each, and asks before pushing.
+`/code-forge:apply-structure-x` in the repo. It inventories the repo, the docs and the code (with evidence per feature), interviews you on the intended stack, writes `docs/technical/architecture/adoption-plan.md`, executes the sections you approve with one commit each, and asks before pushing.
 
 ## Blanks used in the templates
 

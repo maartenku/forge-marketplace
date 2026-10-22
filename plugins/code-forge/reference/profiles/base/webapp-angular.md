@@ -1,6 +1,6 @@
 # Stack
 
-Base profile `webapp-angular` (code-forge): UI only, no backend of our own. Extensions are appended below by `architecture`.
+Base profile `webapp-angular` (code-forge): UI only, no backend of our own. Extensions are appended below by `architecture-4`.
 
 ## Application type
 Web app, frontend only: an Angular SPA or a prerendered static site with no server logic. State lives in the browser or in static JSON shipped with the build. If accounts, shared state or secrets appear, move to `webapp-api-dotnet-angular` or `cloudflare-webapp-serverless`.

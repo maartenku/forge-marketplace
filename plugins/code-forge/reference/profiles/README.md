@@ -1,6 +1,6 @@
 # Stack profiles: base plus extensions
 
-`docs/technical/architecture/stack.md` is composed, not written. Take one base profile (what kind of app, which frontend and backend) and add one extension per category (hosting, auth, database, source control). The `architecture` skill pastes the base, appends the chosen extension sections, and trims. The matrix below says which combinations work. Anything outside it needs an ADR.
+`docs/technical/architecture/stack.md` is composed, not written. Take one base profile (what kind of app, which frontend and backend) and add one extension per category (hosting, auth, database, source control). The `architecture-4` skill pastes the base, appends the chosen extension sections, and trims. The matrix below says which combinations work. Anything outside it needs an ADR.
 
 ## Base profiles (`base/`)
 
@@ -20,14 +20,14 @@
 | hosting | `cloudflare`: Workers or Pages, `wrangler deploy` | no | cloudflare-webapp-serverless; webapp-angular (static only) |
 | auth | `aspnet-identity`: ASP.NET Core Identity with JWT and roles | yes, when the app has accounts | webapp-api, api |
 | auth | `third-party-oauth-sso`: Cloudflare Access, or OIDC/OAuth from Google, GitHub, Microsoft or Authentik; the app maps claims to roles | no | all (the only option on Cloudflare; webapp-angular can only do Access at the front door) |
-| database | `files-only`: JSON or Markdown under a root folder the app owns | no default; `architecture` asks | webapp-api, api, webapp-angular (static JSON), cloudflare (R2) |
+| database | `files-only`: JSON or Markdown under a root folder the app owns | no default; `architecture-4` asks | webapp-api, api, webapp-angular (static JSON), cloudflare (R2) |
 | database | `ef-sqlite`: EF Core with a SQLite file | no default | webapp-api, api |
 | database | `ef-sqlexpress`: EF Core with SQL Server Express in Docker | no default | webapp-api, api |
 | database | `cloudflare-d1`: D1 (SQLite dialect) via Drizzle, KV and R2 for cache and files | no default | cloudflare-webapp-serverless |
 | source-control | `local-git`: a local repository, no remote, no CI | yes | all |
 | source-control | `github`: GitHub with GitHub Actions | no | all; smoothest with Cloudflare |
 
-"none" is a valid answer for auth (single-user tools) and for database on `webapp-angular`. Write "none" in that section rather than deleting it. The database category has no default on purpose: the choice follows from the features, so `architecture` always asks.
+"none" is a valid answer for auth (single-user tools) and for database on `webapp-angular`. Write "none" in that section rather than deleting it. The database category has no default on purpose: the choice follows from the features, so `architecture-4` always asks.
 
 ## Compatibility matrix
 
@@ -38,7 +38,7 @@
 | api-dotnet | local-machine | none, aspnet-identity (JWT or API keys), third-party-oauth-sso | files-only, ef-sqlite, ef-sqlexpress | local-git, github |
 | cloudflare-webapp-serverless | cloudflare | third-party-oauth-sso (Access, or OAuth in the Worker) | cloudflare-d1, files-only (R2) | github (recommended), local-git |
 
-## How `architecture` composes `stack.md`
+## How `architecture-4` composes `stack.md`
 
 1. Paste the chosen `base/*.md` in full.
 2. For each category, append the chosen `extensions/[category]/*.md`. Each file is one `##` section.

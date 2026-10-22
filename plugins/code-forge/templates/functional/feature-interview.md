@@ -1,4 +1,4 @@
-# Feature interview (used by new-project and feature-define)
+# Feature interview (used by new-project-1 and feature-define-2)
 
 Ask only what the user's high-level expectations leave unclear: at most six questions per project and one or two per feature. Then write the notes in full. The user reviews them and does not draft them.
 

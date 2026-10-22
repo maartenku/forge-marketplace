@@ -1,6 +1,6 @@
 # Stack
 
-Base profile `webapp-api-dotnet-angular` (code-forge), the default. Extensions are appended below by `architecture`. Deviations are ADRs in `decisions/`.
+Base profile `webapp-api-dotnet-angular` (code-forge), the default. Extensions are appended below by `architecture-4`. Deviations are ADRs in `decisions/`.
 
 ## Application type
 Web app: an Angular SPA and a .NET Web API, one repo, two deployables.

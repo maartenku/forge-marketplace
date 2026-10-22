@@ -21,7 +21,7 @@
       "name": "code-forge",
       "source": "./plugins/code-forge",
       "description": "A phase-gated workflow kit for AI-assisted side projects: functional docs, technical docs, stack profiles and the skills that run each phase.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "category": "development",
       "tags": [
         "workflow",

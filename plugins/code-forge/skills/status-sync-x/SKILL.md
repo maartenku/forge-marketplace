@@ -1,9 +1,9 @@
 ---
-name: status-sync
+name: status-sync-x
 description: code-forge workflow housekeeping. Reconciles the repo's docs/technical/features state folders with the functional feature notes' status, the functional roadmap (`roadmap.md`) and docs/README.md; reports drift and fixes it. Use when the user says "sync status", "update the docs", "are the docs in sync", at the end of any feature step, or after manual edits.
 ---
 
-# status-sync
+# status-sync-x
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 
@@ -25,4 +25,4 @@ Reconcile the places a feature's state lives: the `docs/technical/features/` fol
 
 - Touch state fields only, never a feature's scope, criteria or plan text.
 - Never move a functional note.
-- When `/code-forge:status-check` calls you, run as a dry run and report only.
+- When `/code-forge:status-check-x` calls you, run as a dry run and report only.

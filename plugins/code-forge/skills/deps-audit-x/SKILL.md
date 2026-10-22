@@ -1,9 +1,9 @@
 ---
-name: deps-audit
+name: deps-audit-x
 description: code-forge workflow dependency audit. Verifies lockfiles are committed and frozen in CI, flags any package version younger than 7 days, finds unused or duplicate dependencies, runs the npm/pnpm and dotnet vulnerability audits, and updates docs/technical/architecture/dependencies.md. Use before merging a foundation or any feature that added packages, when the user says "audit dependencies" or "check packages", or weekly on active projects.
 ---
 
-# deps-audit
+# deps-audit-x
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 

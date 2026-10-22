@@ -52,7 +52,7 @@ Inside the functional root use relative markdown links (`[Trip planning](feature
 
 ## State
 
-Functional notes never move. Their state is the `status` field. Technical feature plans do move, between `docs/technical/features/backlog/`, `in-progress/` and `done/`. The two are kept in step by `status-sync`: `backlog` means `planned`, `in-progress` means `active`, `done` means `done`. `idea` and `dropped` exist only on the functional side.
+Functional notes never move. Their state is the `status` field. Technical feature plans do move, between `docs/technical/features/backlog/`, `in-progress/` and `done/`. The two are kept in step by `status-sync-x`: `backlog` means `planned`, `in-progress` means `active`, `done` means `done`. `idea` and `dropped` exist only on the functional side.
 
 ## Writing the notes
 

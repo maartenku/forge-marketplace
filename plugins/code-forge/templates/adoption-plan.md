@@ -1,6 +1,6 @@
 # Adoption plan: {{PROJECT}}
 
-`/code-forge:apply-structure`, {{DATE}}. Approve per section. Base `[…]`, hosting `[…]`, auth `[…]`, database `[…]`, source control `[…]`.
+`/code-forge:apply-structure-x`, {{DATE}}. Approve per section. Base `[…]`, hosting `[…]`, auth `[…]`, database `[…]`, source control `[…]`.
 
 ## 0. Inventory
 Repo, docs, functional docs, current stack, in a few lines.

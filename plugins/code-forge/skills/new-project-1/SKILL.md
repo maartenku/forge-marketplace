@@ -1,9 +1,9 @@
 ---
-name: new-project
+name: new-project-1
 description: Phase 1 of the code-forge workflow. Creates the functional docs for a new project (hub, whitepaper, roadmap, feature notes, design decisions, user journey) from the user's high-level expectations, either in docs/functional inside the repo or in any folder the user names (an Obsidian vault, for example). Use when the user wants to start, define or set up a new project, says "new project" or "start a project", or asks to turn an idea into project docs.
 ---
 
-# new-project
+# new-project-1
 
 Paths that start with `${CLAUDE_PLUGIN_ROOT}` point to the code-forge plugin folder. If your tool does not fill in that variable, use the folder two levels above this SKILL.md.
 
@@ -22,12 +22,12 @@ You are running Phase 1 of the code-forge workflow. Create the functional docs f
    - `README.md`, the hub, with `status: planned`, `Loop phase: 1` and `Repo: (none yet)`.
    - `whitepaper.md`.
    - `roadmap.md`, with the phases applied to this project's first slice.
-   - `features/README.md`, then one `features/[slug].md` per feature, following `${CLAUDE_PLUGIN_ROOT}/skills/feature-define/SKILL.md` for each (do not re-ask questions already answered).
+   - `features/README.md`, then one `features/[slug].md` per feature, following `${CLAUDE_PLUGIN_ROOT}/skills/feature-define-2/SKILL.md` for each (do not re-ask questions already answered).
    - `design/decisions.md`, decisions only.
    - `setup/user-journey.md`.
    Mark anything you guessed with a visible "Assumption:" note.
 4. If the functional root is inside a repository, commit as `docs(functional): define [project]`. Ask before pushing.
-5. Report back: the files you created, the feature slugs, the assumptions, and the gate question: does this project need code? If yes, the next step is `/code-forge:init-repo`. Later features are added with `/code-forge:feature-define`.
+5. Report back: the files you created, the feature slugs, the assumptions, and the gate question: does this project need code? If yes, the next step is `/code-forge:init-repo-3`. Later features are added with `/code-forge:feature-define-2`.
 
 ## Rules
 

@@ -1,6 +1,6 @@
 # Foundations: copy instead of generating
 
-A table of code worth lifting into a new project instead of generating it again: an auth slice, a Clean Architecture solution layout, Dockerfiles, a sandbox seeder, CI steps, the OpenAPI and NSwag wiring. Phase 3 (`architecture`) reads this table to fill "Reusable pieces" in `overview.md`; Phase 4 (`foundation`) copies the pieces first and generates only what is missing.
+A table of code worth lifting into a new project instead of generating it again: an auth slice, a Clean Architecture solution layout, Dockerfiles, a sandbox seeder, CI steps, the OpenAPI and NSwag wiring. Phase 3 (`architecture-4`) reads this table to fill "Reusable pieces" in `overview.md`; Phase 4 (`foundation-5`) copies the pieces first and generates only what is missing.
 
 These are pointers, not code, so the kit stays small. Add a row whenever one of your projects produces something reusable, and point at the repo and paths where it lives.
 

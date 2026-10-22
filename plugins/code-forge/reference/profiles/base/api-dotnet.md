@@ -1,6 +1,6 @@
 # Stack
 
-Base profile `api-dotnet` (code-forge): headless .NET, as an API, a worker, a scheduled job or a CLI. Extensions are appended below by `architecture`.
+Base profile `api-dotnet` (code-forge): headless .NET, as an API, a worker, a scheduled job or a CLI. Extensions are appended below by `architecture-4`.
 
 ## Application type
 Pick one: API or service, worker or scheduled job, CLI. A single .NET deployable with no UI.

@@ -11,7 +11,7 @@
 ## Loop
 0 Idea, 1 Define (functional docs), 2 Repo, 3 Architecture, 4 Foundation and sandbox, 5 Design, 6 Features (plan, implement, sync), 7 Verify, back to 6.
 
-- Session start: `/code-forge:status-check`. State the phase and the next gate. If the gate's inputs are missing, stop and say so.
+- Session start: `/code-forge:status-check-x`. State the phase and the next gate. If the gate's inputs are missing, stop and say so.
 - No application code before `docs/technical/architecture/foundation-plan.md` is approved. No feature code before its `plan.md` is reviewed. Plan the next feature only.
 - Deviations from `docs/technical/architecture/stack.md` get an ADR in `docs/technical/architecture/decisions/`.
 
