@@ -1,0 +1,17 @@
+{
+  "name": "forge-marketplace",
+  "owner": {
+    "name": "Maarten"
+  },
+  "description": "Plugins and skills for Claude, Codex and Copilot.",
+  "plugins": [
+    {
+      "name": "no-ai-speak",
+      "source": "./plugins/no-ai-speak",
+      "description": "Keeps prose sounding human by avoiding common AI-writing patterns.",
+      "version": "0.1.0",
+      "category": "writing",
+      "tags": ["writing", "style", "editing"]
+    }
+  ]
+}

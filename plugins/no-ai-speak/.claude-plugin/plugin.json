@@ -1,0 +1,10 @@
+{
+  "name": "no-ai-speak",
+  "version": "0.1.0",
+  "description": "Keeps prose sounding human by avoiding common AI-writing patterns.",
+  "author": {
+    "name": "Maarten"
+  },
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["writing", "style", "editing"]
+}

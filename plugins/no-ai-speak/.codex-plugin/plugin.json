@@ -1,0 +1,21 @@
+{
+  "name": "no-ai-speak",
+  "version": "0.1.0",
+  "description": "Keeps prose sounding human by avoiding common AI-writing patterns.",
+  "author": {
+    "name": "Maarten"
+  },
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["writing", "style", "editing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "No AI Speak",
+    "shortDescription": "Write prose without common AI-writing patterns",
+    "developerName": "Maarten",
+    "category": "Writing",
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Rewrite this text so it doesn't sound like AI wrote it."
+    ]
+  }
+}

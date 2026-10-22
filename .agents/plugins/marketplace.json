@@ -1,0 +1,20 @@
+{
+  "name": "forge-marketplace",
+  "interface": {
+    "displayName": "Forge Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "no-ai-speak",
+      "source": {
+        "source": "local",
+        "path": "./plugins/no-ai-speak"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Writing"
+    }
+  ]
+}
