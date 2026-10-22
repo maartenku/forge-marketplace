@@ -1,0 +1,16 @@
+# macOS (._* files appear when copying from FAT/exFAT drives like a USB stick)
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python (scripts/validate.py)
+__pycache__/
+*.pyc
+
+# Local agent settings (personal, not part of the marketplace)
+.claude/settings.local.json
+.codex/
