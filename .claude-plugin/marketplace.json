@@ -11,7 +11,23 @@
       "description": "Keeps prose sounding human by avoiding common AI-writing patterns.",
       "version": "0.1.0",
       "category": "writing",
-      "tags": ["writing", "style", "editing"]
+      "tags": [
+        "writing",
+        "style",
+        "editing"
+      ]
+    },
+    {
+      "name": "code-forge",
+      "source": "./plugins/code-forge",
+      "description": "A phase-gated workflow kit for AI-assisted side projects: functional docs, technical docs, stack profiles and the skills that run each phase.",
+      "version": "0.3.0",
+      "category": "development",
+      "tags": [
+        "workflow",
+        "project-setup",
+        "architecture"
+      ]
     }
   ]
 }

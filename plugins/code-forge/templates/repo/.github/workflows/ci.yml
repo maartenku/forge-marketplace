@@ -1,0 +1,13 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Phase 4 adds toolchain setup here (actions/setup-node + pnpm with frozen lockfile, actions/setup-dotnet with locked restore).
+      - name: Tests + audits
+        run: ./scripts/test.sh

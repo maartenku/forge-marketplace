@@ -1,16 +1,17 @@
 # Forge Marketplace
 
-A plugin marketplace for Claude, Codex and GitHub Copilot. Each plugin works in all three.
+A plugin marketplace for Claude, Codex and GitHub Copilot.
 
 ## Plugins
 
-| Plugin | What it does |
-| --- | --- |
-| [no-ai-speak](plugins/no-ai-speak) | Keeps prose sounding human by avoiding common AI-writing patterns. |
+| Plugin | What it does | Built for |
+| --- | --- | --- |
+| [no-ai-speak](plugins/no-ai-speak) | Keeps prose sounding human by avoiding common AI-writing patterns. | all three |
+| [code-forge](plugins/code-forge) | A phase-gated workflow kit for AI-assisted side projects: functional docs, technical docs, stack profiles and the skills that run each phase. | Claude Code (installs elsewhere, but its skills use Claude Code paths) |
 
 ## Install
 
-Replace `<github-user>` with the GitHub account that hosts this repo.
+Replace `<github-user>` with the GitHub account that hosts this repo. The examples install no-ai-speak; use `code-forge` in place of `no-ai-speak` for the other plugin.
 
 ### Claude Code
 

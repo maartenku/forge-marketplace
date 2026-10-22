@@ -1,0 +1,30 @@
+# secrets & local config
+.env
+.env.*
+!.env.example
+
+# node / angular
+node_modules/
+dist/
+.angular/
+coverage/
+playwright-report/
+test-results/
+
+# dotnet
+bin/
+obj/
+*.user
+.vs/
+
+# sandbox runtime data (seeds and fs/ examples ARE committed)
+environments/sandbox/app.db
+environments/sandbox/app.db-*
+environments/sandbox/.data/
+
+# os / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
